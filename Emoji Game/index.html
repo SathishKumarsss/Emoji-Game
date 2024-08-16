@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body onload="shuffleAndLoadImg()">
+    <h1>Emoji Game</h1>
+    
+    <div class="container">
+        <div class="score-main">
+            <div class="scoreboard">
+                <span class="score1">Score: <span id="score">0</span></span>
+                <button class="score1" onclick="reset()">Reset</button>
+            </div>
+            <div class="wel-div">
+                <h2 class="wel">Welcome Enjoy To Play Visit Again!</h2>
+            </div>
+            <div class="design-img">
+                <img src="emoji-background.jpg" alt="">
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img  alt="" id="emoji-1" onclick="play('emoji-1')">
+            </div>
+            <div class="grid-item">
+                <img  alt="" id="emoji-2" onclick="play('emoji-2')">
+            </div>
+            <div class="grid-item">
+                <img  alt="" id="emoji-3" onclick="play('emoji-3')">
+            </div>  
+            <div class="grid-item">
+                <img  alt="" id="emoji-4" onclick="play('emoji-4')">
+            </div>
+            <div class="grid-item">
+                <img  alt="" id="emoji-5" onclick="play('emoji-5')">
+            </div>
+            <div class="grid-item">
+                <img  alt="" id="emoji-6" onclick="play('emoji-6')">
+            </div>  
+            <div class="grid-item">
+                <img  alt="" id="emoji-7" onclick="play('emoji-7')">
+            </div>
+            <div class="grid-item">
+                <img  alt="" id="emoji-8" onclick="play('emoji-8')">
+            </div>
+            <div class="grid-item">
+                <img  alt="" id="emoji-9" onclick="play('emoji-9')">
+            </div> 
+            <div class="grid-item">
+                <img  alt="" id="emoji-10" onclick="play('emoji-10')">
+            </div>
+            <div class="grid-item">
+                <img  alt="" id="emoji-11" onclick="play('emoji-11')">
+            </div>
+            <div class="grid-item">
+                <img  alt="" id="emoji-12" onclick="play('emoji-12')">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalMsg"></p>
+            <img id="modalImg" src="emoji-background.jpg" alt="Clicked Emoji" style="width: 100px; height: 100px;">
+        </div>
+    </div>
+
+</body>
+</html>
